@@ -96,7 +96,7 @@ wget 'https://sv.gnu.org/people/viewgpg.php?user_id=127547' -qO - | sudo -i gpg 
 installguix()
 {
 
-git clone --depth 1 https://github.com/mbcladwell/limsn.git
+git clone --depth 1 https://github.com/labsolns/limsn.git
 
 sed -i "s/host.name = 127.0.0.1/host.name = $IPADDRESS/" /home/admin/limsn/limsn/conf/artanis.conf
 sed -i "s/cookie.maxplates = 10/cookie.maxplates = $MAXNUMPLATES/" /home/admin/limsn/limsn/conf/artanis.conf
